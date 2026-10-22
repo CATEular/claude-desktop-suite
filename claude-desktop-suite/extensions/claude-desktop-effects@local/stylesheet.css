@@ -1,0 +1,7 @@
+#panel .panel-button.claude-readable-hover {
+    background-color: #d97757;
+    color: #241b15;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px rgba(36, 27, 21, 0.22);
+    text-shadow: none;
+}

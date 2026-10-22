@@ -1,0 +1,70 @@
+/* Readable 16px terminal title with content-driven height. */
+terminal-window.background headerbar.titlebar,
+window.terminal-window.background headerbar.titlebar {
+    min-height: 0;
+    padding: 2px 8px;
+    margin: 0;
+    border: none;
+    background-color: #ead7af;
+    background-image: none;
+    color: #4f4337;
+    font-size: 16px;
+    box-shadow: none;
+}
+terminal-window.background headerbar.titlebar *,
+window.terminal-window.background headerbar.titlebar * {
+    min-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+}
+/* More specific than WhiteSur's .linked:not(.vertical):not(.stack-switcher) rules. */
+terminal-window.background headerbar.titlebar .linked:not(.vertical) > button,
+window.terminal-window.background headerbar.titlebar .linked:not(.vertical) > button,
+terminal-window.background headerbar.titlebar button:not(.titlebutton):not(.combo),
+window.terminal-window.background headerbar.titlebar button:not(.titlebutton):not(.combo),
+terminal-window.background headerbar.titlebar button.titlebutton,
+window.terminal-window.background headerbar.titlebar button.titlebutton {
+    min-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    background-color: transparent;
+    background-size: 16px 16px;
+    box-shadow: none;
+}
+/* Restore normal-size toolbar and window-control icons. */
+terminal-window.background headerbar.titlebar button image,
+window.terminal-window.background headerbar.titlebar button image {
+    min-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    -gtk-icon-transform: none;
+}
+terminal-window.background headerbar.titlebar label,
+terminal-window.background headerbar.titlebar .title,
+window.terminal-window.background headerbar.titlebar label,
+window.terminal-window.background headerbar.titlebar .title {
+    font-size: 16px;
+    min-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #4f4337;
+}
+terminal-window.background headerbar.titlebar .subtitle,
+window.terminal-window.background headerbar.titlebar .subtitle {
+    font-size: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}

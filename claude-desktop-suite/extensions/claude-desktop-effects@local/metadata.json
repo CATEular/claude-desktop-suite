@@ -1,0 +1,7 @@
+{
+  "uuid": "claude-desktop-effects@local",
+  "name": "Claude Desktop Effects",
+  "description": "Workspace wallpapers, desktop-focused cards with workspace selection, and Claude orange panel hover backgrounds.",
+  "shell-version": ["3.36"],
+  "version": 3
+}

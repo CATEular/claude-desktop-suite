@@ -1,0 +1,51 @@
+/* Claude-inspired ivory glass. GTK 3 gradients, without compositor blur. */
+* { font-family: 'Noto Sans CJK SC', 'Ubuntu', sans-serif; }
+window { background-color: transparent; }
+.glass-card {
+    background-color: rgba(250, 246, 235, 0.70);
+    background-image: linear-gradient(145deg, rgba(255, 252, 242, 0.22), rgba(243, 223, 183, 0.10));
+    border: 1px solid rgba(255, 252, 242, 0.56);
+    border-top-color: rgba(255, 253, 248, 0.82);
+    border-radius: 16px;
+    padding: 13px 14px 12px;
+    box-shadow: 0 5px 12px rgba(20, 20, 19, 0.22), inset 0 1px rgba(250, 249, 245, 0.08);
+}
+.widget-title { color: #A65438; font-size: 17px; font-weight: bold; letter-spacing: 1px; }
+.widget-sub { color: #706253; font-size: 12px; }
+.header-btn {
+    background: rgba(217, 119, 87, 0.10);
+    border: 1px solid rgba(217, 119, 87, 0.38);
+    color: #9A4B33; font-size: 15px; font-weight: bold;
+    min-height: 0; min-width: 0; padding: 0 6px; border-radius: 7px;
+    box-shadow: none; text-shadow: none;
+}
+.header-btn:hover { background: rgba(217, 119, 87, 0.25); border-color: #A65438; color: #3D342B; }
+.divider { background-color: rgba(96, 75, 49, 0.20); min-height: 1px; margin: 9px 0 7px; }
+.todo-row, .note-row { padding: 3px 0; margin: 1px 0; border-radius: 6px; }
+.todo-row:hover, .note-row:hover { background: rgba(255, 252, 242, 0.22); }
+.check-btn { background: transparent; border: none; min-width: 0; min-height: 0; padding: 0 2px; box-shadow: none; }
+.check-btn:hover { background: rgba(217, 119, 87, 0.10); }
+.action-btn {
+    background: transparent; border: none; color: #706253;
+    font-size: 12px; min-width: 0; min-height: 0; padding: 1px 3px;
+    border-radius: 5px; box-shadow: none; text-shadow: none;
+}
+.action-btn:hover { color: #9A4B33; background: rgba(217, 119, 87, 0.16); }
+.action-btn.del-btn:hover { color: #A13F37; background: rgba(192, 95, 87, 0.18); }
+.custom-entry, .inline-edit-entry {
+    background: rgba(255, 252, 242, 0.58); border: 1px solid rgba(176, 174, 165, 0.40);
+    border-radius: 7px; color: #3D342B; font-size: 13px;
+    padding: 3px 5px; min-width: 0; box-shadow: none; caret-color: #A65438;
+}
+.custom-entry:focus, .inline-edit-entry:focus { border-color: #A65438; }
+.save-btn, .cancel-btn {
+    background: rgba(255, 252, 242, 0.22); border: 1px solid rgba(176, 174, 165, 0.35);
+    color: #706253; font-size: 12px; min-width: 0; min-height: 0; padding: 1px 4px;
+    border-radius: 5px; box-shadow: none; text-shadow: none;
+}
+.save-btn { color: #50603C; border-color: #788C5D; }
+.toast-label { color: #50603C; font-size: 12px; }
+scrolledwindow, viewport { background: transparent; border: none; }
+scrollbar, scrollbar.vertical { background: transparent; border: none; min-width: 4px; }
+scrollbar slider { background: rgba(217, 119, 87, 0.35); border-radius: 3px; min-width: 4px; border: none; }
+scrollbar slider:hover { background: rgba(217, 119, 87, 0.70); }

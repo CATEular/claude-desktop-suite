@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="cream-island">
+  <schema id="org.gnome.shell.extensions.cream-island" path="/org/gnome/shell/extensions/cream-island/">
+    <key name="left-click-action" type="s">
+      <default>'notifications'</default>
+      <summary>Action on left-clicking the capsule</summary>
+      <description>Action triggered when the capsule is left-clicked: timer, media, notifications, workspaces, wallpaper, power, control-center, launcher</description>
+    </key>
+    <key name="middle-click-action" type="s">
+      <default>'timer'</default>
+      <summary>Action on middle-clicking the capsule</summary>
+      <description>Action triggered when the capsule is middle-clicked</description>
+    </key>
+    <key name="right-click-action" type="s">
+      <default>'media'</default>
+      <summary>Action on right-clicking the capsule</summary>
+      <description>Action triggered when the capsule is right-clicked</description>
+    </key>
+    <key name="layout-version" type="i">
+      <default>0</default>
+      <summary>One-time layout migration version</summary>
+    </key>
+    <key name="capsule-width" type="i">
+      <default>400</default>
+      <summary>Capsule width</summary>
+      <description>Maximum comfortable capsule width in logical pixels (240 to 640); media never grows this width</description>
+    </key>
+    <key name="capsule-height" type="i">
+      <default>54</default>
+      <summary>Capsule height</summary>
+      <description>Minimum capsule height in logical pixels (44 to 80); natural text height takes priority</description>
+    </key>
+    <key name="capsule-top-margin" type="i">
+      <default>6</default>
+      <summary>Capsule top margin</summary>
+      <description>Margin from the top of the primary monitor in CSS pixels (0 to 24)</description>
+    </key>
+    <key name="glass-opacity" type="i">
+      <default>89</default>
+      <summary>Glass opacity</summary>
+      <description>Glass background opacity percentage (60 to 98); panel adds four percentage points for readability</description>
+    </key>
+    <key name="capsule-show-media-ticker" type="b">
+      <default>true</default>
+      <summary>Show playing media in the top bar capsule</summary>
+      <description>Whether to show the playing media track and playback status in the capsule</description>
+    </key>
+    <key name="capsule-date-format" type="s">
+      <default>'%m月%d日 %a %H:%M'</default>
+      <summary>Date/time format for the capsule</summary>
+      <description>GLib strftime format for the capsule clock</description>
+    </key>
+    <key name="original-wallpaper-uri" type="s">
+      <default>''</default>
+      <summary>Original wallpaper URI backup</summary>
+      <description>GSettings backup of previous wallpaper URI for safe one-click restoration</description>
+    </key>
+    <key name="auto-hide-fullscreen" type="b">
+      <default>true</default>
+      <summary>Auto hide on fullscreen</summary>
+      <description>Whether to automatically close panel and hide capsule in fullscreen mode</description>
+    </key>
+    <key name="island-hotkey" type="as">
+      <default>['&lt;Super&gt;i']</default>
+      <summary>Global shortcut to toggle Island panel</summary>
+      <description>Customizable keybinding to toggle the Dynamic Island panel</description>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,11 @@
+{
+  "uuid": "cream-island@local",
+  "name": "Cream Island",
+  "description": "Native clock island with icon shortcuts, timer, local Bilibili, notifications and default-input microphone peak meter",
+  "shell-version": [
+    "3.36"
+  ],
+  "version": 10,
+  "settings-schema": "org.gnome.shell.extensions.cream-island",
+  "gettext-domain": "cream-island"
+}

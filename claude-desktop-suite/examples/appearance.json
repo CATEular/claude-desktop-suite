@@ -1,0 +1,27 @@
+{
+  "terminal": {
+    "use-theme-colors": false,
+    "use-theme-transparency": false,
+    "use-transparent-background": true,
+    "background-transparency-percent": 20,
+    "background-color": "#262624",
+    "foreground-color": "#faf9f5",
+    "bold-color": "#e8e6dc",
+    "cursor-colors-set": true,
+    "cursor-background-color": "#d97757",
+    "cursor-foreground-color": "#141413",
+    "highlight-colors-set": true,
+    "highlight-background-color": "#5b453b",
+    "highlight-foreground-color": "#faf9f5",
+    "palette": ["#3b3935", "#c97670", "#8e9e78", "#d6b77b", "#829db5", "#b69bb8", "#91aca3", "#e8e6dc", "#514c45", "#e9a29b", "#b3c399", "#ecd19b", "#aac5dc", "#d5bed4", "#b9d2c6", "#faf9f5"]
+  },
+  "desktop": {
+    "/org/gnome/terminal/legacy/theme-variant": "light",
+    "/org/gnome/shell/extensions/dash-to-dock/custom-background-color": true,
+    "/org/gnome/shell/extensions/dash-to-dock/background-color": "#c7ad85",
+    "/org/gnome/shell/extensions/fully-transparent-top-bar/text-is-default-color": false,
+    "/org/gnome/shell/extensions/fully-transparent-top-bar/text-active-color": "#4f4337",
+    "/org/gnome/shell/extensions/fully-transparent-top-bar/text-inactive-color": "#faf3e5",
+    "/org/gnome/shell/extensions/fully-transparent-top-bar/background-active-color": "rgb(243,235,215)"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "originalWallpaper": "",
+  "wallpapers": [
+    null,
+    null,
+    null,
+    null
+  ],
+  "workspaceWallpapersEnabled": true,
+  "sidebarHoverEnabled": true,
+  "sidebarWorkspaces": [
+    2
+  ],
+  "sidebarRestAngle": 72,
+  "sidebarHoverPadding": 14,
+  "sidebarCloseDelay": 200,
+  "animationDuration": 259,
+  "topbarHoverEnabled": true
+}

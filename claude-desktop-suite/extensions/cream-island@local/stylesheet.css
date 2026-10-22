@@ -1,0 +1,389 @@
+/* Cream Island - Apple-Style Black & White Glass Theme for GNOME Shell 3.36
+ * Translucent dark glass, neutral monochrome highlights, sharp typography,
+ * expanded readable canvas.
+ */
+
+/* Native panel surface: no external minimum height or strut. */
+.cream-island-indicator { -natural-hpadding: 0px; -minimum-hpadding: 0px; padding: 0 2px; }
+.cream-island-top-surface { padding: 0 5px; spacing: 4px; border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.18); border-top-color: rgba(255,255,255,0.38); color: #ffffff; }
+.cream-island-top-surface:active { border-color: rgba(255,255,255,0.48); }
+.cream-island-top-dot { background-color: #bcbcc8; border-radius: 20px; }
+.cream-island-top-icon { icon-size: 11px; color: #f1f1f4; }
+.cream-island-top-title { font-size: 11px; font-weight: 500; color: #f1f1f4; }
+.cream-island-top-badge { icon-size: 10px; color: #e1e1e7; }
+.cream-island-capsule-badge { font-size: 11px; color: #d7d7dd; padding: 2px 6px; }
+
+/* ====================================================================
+   Dropdown Island Panel (Floating)
+   ==================================================================== */
+
+.cream-island-panel {
+    background-color: rgba(16, 16, 20, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-top-color: rgba(255,255,255,0.28);
+    border-bottom-color: rgba(255,255,255,0.10);
+    border-radius: 26px;
+
+    color: #f4f4f5;
+    padding: 14px 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.38);
+}
+
+/* Icon-only header: no squeezed labels or horizontal navigation scrollbar. */
+.cream-island-header { spacing: 8px; border-bottom: 1px solid rgba(255,255,255,0.10); padding-bottom: 10px; }
+.cream-island-panel-title-row { spacing: 10px; }
+.cream-island-panel-clock { font-size: 12px; color: #b9b9c2; }
+.cream-island-panel-close { padding: 5px; border-radius: 8px; color: #c4c4cd; }
+.cream-island-panel-close:hover { background-color: rgba(255,255,255,0.08); }
+.cream-island-tab-btn { padding: 7px 5px; border-radius: 10px; border: 1px solid transparent; color: #a9a9b4; }
+.cream-island-tab-btn:hover { background-color: rgba(255,255,255,0.07); color: #ffffff; }
+.cream-island-tab-btn.active { background-color: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.13); color: #ffffff; }
+.cream-island-tab-icon { icon-size: 16px; }
+.cream-island-tooltip { padding: 5px 8px; border-radius: 7px; font-size: 11px; color: #ffffff; background-color: rgba(16,16,20,0.98); }
+
+/* Common Cards */
+.cream-island-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+
+}
+
+.cream-island-card-inner {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+    padding: 12px;
+}
+
+/* Typography */
+.cream-island-title {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.cream-island-subtitle {
+    font-size: 0.88em;
+    color: #a1a1aa;
+}
+
+/* Buttons */
+.cream-island-btn {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 6px 14px;
+    color: #f4f4f5;
+    font-weight: 500;
+    transition-duration: 150ms;
+}
+
+.cream-island-btn:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.24);
+    color: #ffffff;
+}
+
+.cream-island-btn:active {
+    background-color: rgba(255, 255, 255, 0.22);
+}
+
+.cream-island-btn-accent {
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 10px;
+    padding: 6px 16px;
+    color: #ffffff;
+    font-weight: 600;
+
+    transition-duration: 150ms;
+}
+
+.cream-island-btn-accent:hover {
+    background-color: rgba(255, 255, 255, 0.32);
+    border-color: rgba(255, 255, 255, 0.45);
+
+}
+
+.cream-island-btn-danger {
+    background-color: rgba(239, 68, 68, 0.22);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    color: #fca5a5;
+    border-radius: 10px;
+    padding: 6px 14px;
+    transition-duration: 150ms;
+}
+
+.cream-island-btn-danger:hover {
+    background-color: rgba(239, 68, 68, 0.38);
+    border-color: rgba(239, 68, 68, 0.55);
+    color: #ffffff;
+}
+
+/* Chips */
+.cream-island-chip {
+    background-color: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+    padding: 4px 12px;
+    color: #d4d4d8;
+    margin-right: 6px;
+    transition-duration: 150ms;
+}
+
+.cream-island-chip:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+}
+
+.cream-island-chip.active {
+    background-color: rgba(255, 255, 255, 0.22);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ====================================================================
+   Overview Dashboard Tiles
+   ==================================================================== */
+
+.cream-island-overview-tile {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 6px;
+    transition-duration: 150ms;
+}
+
+.cream-island-overview-tile:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.20);
+
+}
+
+.cream-island-overview-tile-icon {
+    icon-size: 26px;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+/* ====================================================================
+   Workspaces Preview
+   ==================================================================== */
+
+.cream-island-workspace-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 18px;
+    padding: 14px;
+    margin: 8px;
+    min-width: 220px;
+    transition-duration: 150ms;
+}
+
+.cream-island-workspace-card:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.22);
+
+}
+
+.cream-island-workspace-card.active {
+    background-color: rgba(255, 255, 255, 0.14);
+    border: 1.5px solid rgba(255, 255, 255, 0.45);
+
+}
+
+.cream-island-workspace-preview-box {
+    background-color: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    padding: 4px;
+    margin-top: 8px;
+}
+
+/* ====================================================================
+   Calendar & Notes
+   ==================================================================== */
+
+ .cream-island-cal-day-cell {
+    padding: 3px 0;
+    background-color: transparent;
+    color: #e4e4e7;
+}
+.cream-island-cal-day-face {
+    min-width: 28px;
+    padding: 6px 3px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    text-align: center;
+}
+.cream-island-cal-day-cell:hover .cream-island-cal-day-face {
+    background-color: rgba(255,255,255,0.09);
+}
+.cream-island-cal-day-cell.other-month { color: #65656e; }
+.cream-island-cal-day-cell.today .cream-island-cal-day-face {
+    border-color: rgba(255,255,255,0.35);
+    font-weight: 600;
+}
+.cream-island-cal-day-cell.selected .cream-island-cal-day-face {
+    background-color: #eeeeF0;
+    color: #16161b;
+    font-weight: 600;
+}
+
+.cream-island-cal-dot {
+    background-color: #ffffff;
+    border-radius: 3px;
+    width: 5px;
+    height: 5px;
+    margin-top: 3px;
+}
+
+.cream-island-entry {
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 8px 12px;
+}
+
+.cream-island-entry:focus {
+    border-color: rgba(255, 255, 255, 0.35);
+
+}
+
+/* ====================================================================
+   Media & Bilibili View
+   ==================================================================== */
+
+.cream-island-media-title {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.cream-island-media-artist {
+    font-size: 0.90em;
+    color: #a1a1aa;
+}
+
+.cream-island-media-controls {
+    spacing: 12px;
+    margin-top: 10px;
+}
+
+.cream-island-media-app-icon {
+    icon-size: 48px;
+    margin-right: 14px;
+}
+
+/* ====================================================================
+   Notification Center
+   ==================================================================== */
+
+.cream-island-notif-item {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 8px;
+}
+
+.cream-island-notif-title {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.cream-island-notif-body {
+    color: #a1a1aa;
+    font-size: 0.9em;
+}
+
+/* ====================================================================
+   Wallpaper & Power
+   ==================================================================== */
+
+.cream-island-wallpaper-thumb {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    transition-duration: 150ms;
+}
+
+.cream-island-wallpaper-thumb:hover {
+    border-color: rgba(255, 255, 255, 0.40);
+
+}
+
+/* Calendar uses one full-width column and natural text/button heights. */
+.cream-island-panel { font-size: 14px; spacing: 12px; }
+.cream-island-calendar { spacing: 14px; }
+.cream-island-cal-header { spacing: 8px; margin-bottom: 12px; }
+.cream-island-cal-day-name { padding: 6px 0; color: #a1a1aa; }
+
+.cream-island-notes-area { spacing: 10px; }
+.cream-island-notes-area .cream-island-entry { min-height: 72px; }
+.cream-island-note-actions { spacing: 8px; }
+
+
+/* Small controls and a quiet note footer. No actor-wide opacity on text. */
+.cream-island-cal-nav { padding: 3px 8px; border-radius: 8px; }
+.cream-island-cal-today { padding: 4px 9px; font-size: 12px; border-radius: 8px; }
+.cream-island-notes-area { border-top: 1px solid rgba(255,255,255,0.10); padding-top: 12px; }
+.cream-island-notes-title { font-size: 13px; font-weight: 600; color: #d7d7dd; }
+.cream-island-note-clear { padding: 3px 8px; font-size: 12px; background-color: transparent; border-color: transparent; }
+.cream-island-note-actions { spacing: 12px; }
+.cream-island-timer { spacing: 12px; }
+.cream-island-timer-dial { width: 208px; height: 208px; }
+.cream-island-timer-display { font-size: 32px; font-weight: 500; padding: 0; text-align: center; }
+.cream-island-timer-presets { spacing: 6px; }
+.cream-island-timer-preset-row { spacing: 6px; }
+.cream-island-timer-preset { padding: 6px 12px; margin: 0; border-radius: 14px; font-size: 12px; }
+.cream-island-timer-input-row { spacing: 8px; }
+.cream-island-timer-minutes { width: 48px; padding: 5px 8px; text-align: center; }
+.cream-island-timer-controls { spacing: 10px; }
+.cream-island-timer-primary { min-width: 84px; border-radius: 18px; padding: 8px 14px; background-color: #eeeeF0; color: #15151a; }
+.cream-island-timer-reset { border-color: transparent; background-color: transparent; }
+
+.cream-island-top-surface:unread .cream-island-top-dot { background-color: #ffffff; }
+
+/* v5 fixed-anchor content and naturally tall, two-column workspace page. */
+.cream-island-top-content { padding: 0 6px; spacing: 4px; color: #ffffff; }
+.cream-island-top-content:unread .cream-island-top-dot { background-color: #ffffff; }
+.cream-island-workspaces { spacing: 10px; }
+.cream-island-workspace-grid { min-height: 200px; }
+.cream-island-workspace-card { min-width: 190px; padding: 10px; margin: 0; }
+.cream-island-workspace-content { spacing: 10px; }
+.cream-island-workspace-preview-box { padding: 0; margin: 0; }
+
+/* Neutral native indicator; theme accent never bleeds into the island. */
+#panel .panel-button.cream-island-indicator,
+#panel .panel-button.cream-island-indicator:hover,
+#panel .panel-button.cream-island-indicator:active,
+#panel .panel-button.cream-island-indicator:focus,
+#panel .panel-button.cream-island-indicator:checked {
+ background-color: transparent; background-image: none; box-shadow: none; border: none; color: #ffffff;
+}
+.cream-island-clock-part {font-family: monospace; font-size: 11px; width: 18px; text-align:center; color:#fff; text-shadow:none;}
+.cream-island-hover-action {width:24px; padding:0; border-radius:6px; color:#eee; background-color:transparent;}
+.cream-island-hover-action:hover,.cream-island-hover-action:focus {background-color:#333; box-shadow:none;}
+.cream-island-timer-readout {font-family:monospace; font-size:11px; width:48px; color:#fff; text-shadow:none;}
+.cream-island-panel {background-color:#141417; background-gradient-direction:none;}
+.cream-island-top-content {spacing:4px; padding:0 4px;}
+
+.cream-island-hover-action {width:18px;padding:0;}
+.cream-island-hover-action .cream-island-top-icon {icon-size:12px;}
+.cream-island-timer-readout {width:64px;}
+.cream-island-level-bar {width:3px;height:12px;background-color:#fff;}
+
+/* v8: symmetrical idle clock, complete native-hit toolbar. */
+.cream-island-hover-action {width:24px;padding:0;}
+.cream-island-top-content {spacing:4px;padding:0 6px;}
+.cream-island-clock-part {width:18px;text-align:center;}
+
+/* v9: fixed-width right clock only while the microphone is active. */
+.cream-island-mic-clock {font-family:monospace;font-size:11px;width:44px;text-align:center;color:#fff;text-shadow:none;}

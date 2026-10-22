@@ -1,0 +1,15 @@
+Source Output #4
+	Source: 3
+	Corked: no
+	Mute: no
+	Properties:
+		application.name = "parecord"
+		media.name = "/tmp/synthetic-input.wav"
+		application.process.id = "4242"
+		application.process.binary = "pacat"
+Source Output #18
+	Source: 3
+	Corked: no
+	Mute: no
+	Properties:
+		application.id = "cream-island-level@local"
